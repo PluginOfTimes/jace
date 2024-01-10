@@ -1,4 +1,4 @@
-workspace "Snowflax"
+workspace "jace"
 	architecture "x64"
 
 	configurations {
@@ -17,7 +17,7 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 project "jace"
 	location "jace"
-	kind "ConsoleApp"
+	kind "SharedLib"
 	language "C++"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
